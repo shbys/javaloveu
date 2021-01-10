@@ -7,8 +7,8 @@ package javaloveu.hfdp.simuduck;
  */
 public class MallardDuck extends Duck {
     public MallardDuck() {
-        quackBehavior = new Quack();
-        flyBehavior = new FlyWithWings();
+        _quackBehavior = new Quack();
+        _flyBehavior = new FlyWithWings();
     }
 
     public void display() {

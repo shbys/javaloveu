@@ -3,10 +3,10 @@
  */
 package javaloveu.app;
 
-import static javaloveu.hfdp.DesignPattern.runHDFP;
+import static javaloveu.hfdp.DesignPattern.runHeadFirstDesignPattern;
 
 public class App {
     public static void main(String[] args) {
-        runHDFP();
+        runHeadFirstDesignPattern();
     }
 }

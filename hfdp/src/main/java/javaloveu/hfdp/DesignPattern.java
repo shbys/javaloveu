@@ -1,9 +1,9 @@
 package javaloveu.hfdp;
 
-import static javaloveu.hfdp.simuduck.MiniDuckSimulator.runSimuDuck;
+import static javaloveu.hfdp.simuduck.MiniDuckSimulator.runSimulatorDuck;
 
 public class DesignPattern {
-    public static void runHDFP() {
-        runSimuDuck();
+    public static void runHeadFirstDesignPattern() {
+        runSimulatorDuck();
     }
 }

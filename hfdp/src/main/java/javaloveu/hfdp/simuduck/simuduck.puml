@@ -1,0 +1,64 @@
+@startuml
+Duck <|-- MallardDuck
+Duck <|-- RedheadDuck
+Duck <|-- RubberDuck
+Duck <|-- DecoyDuck
+Duck --> "1" FlyBehavior
+Duck --> "1" QuackBehavior
+
+FlyBehavior <|.. FlyWithWings
+FlyBehavior <|.. FlyNoWay
+
+QuackBehavior <|.. Quack
+QuackBehavior <|.. Squeak
+QuackBehavior <|.. MuteQuack
+
+
+abstract class Duck {
+    # FlyBehavior _flyBehavior
+    # QuackBehavior _quackBehavior
+
+    abstract void display()
+    void swim()
+    void performQuack()
+    void performFly()
+    void setFlyBehavior()
+    void setQuackBehavior()
+}
+interface FlyBehavior {
+    {method} void fly()
+}
+interface QuackBehavior {
+    {method} void quack()
+}
+
+class MallardDuck {
+    {method} void display()
+}
+class RedheadDuck {
+    {method} void display()
+}
+class RubberDuck {
+    {method} void display()
+}
+class DecoyDuck {
+    {method} void display()
+}
+
+class FlyWithWings {
+    {method} void fly()
+}
+class FlyNoWay {
+    {method} void fly()
+}
+
+class Quack {
+    {method} void quack()
+}
+class Squeak {
+    {method} void quack()
+}
+class MuteQuack {
+    {method} void quack()
+}
+@enduml
