@@ -1,4 +1,4 @@
-package javaloveu.hfdp.simuduck;
+package javaloveu.hfdp.strategy.simuduck;
 
 /*
  * To perform the quack, a Duck just asks the object that is referenced by quackBehavior to quack for it.

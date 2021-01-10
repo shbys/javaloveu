@@ -1,9 +1,11 @@
 package javaloveu.hfdp;
 
-import static javaloveu.hfdp.simuduck.MiniDuckSimulator.runSimulatorDuck;
+import static javaloveu.hfdp.strategy.StrategyPattern.runStrategyPattern;
+import static javaloveu.hfdp.observer.ObserverPattern.runObserverPattern;
 
 public class DesignPattern {
     public static void runHeadFirstDesignPattern() {
-        runSimulatorDuck();
+        runStrategyPattern();
+        runObserverPattern();
     }
 }

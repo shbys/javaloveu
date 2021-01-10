@@ -1,4 +1,4 @@
-package javaloveu.hfdp.simuduck;
+package javaloveu.hfdp.strategy.simuduck;
 
 public class MiniDuckSimulator {
     public static void runSimulatorDuck() {

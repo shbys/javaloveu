@@ -1,4 +1,4 @@
-package javaloveu.hfdp.simuduck;
+package javaloveu.hfdp.strategy.simuduck;
 
 /*
  * FlyBehavior is an interface that all flying classes implement.

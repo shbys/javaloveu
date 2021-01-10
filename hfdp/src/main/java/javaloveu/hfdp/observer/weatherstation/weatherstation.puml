@@ -1,0 +1,40 @@
+@startuml
+Observer <|.. CurrentConditionsDisplay
+Observer <|.. StatisticsDisplay
+Observer <|.. ForecastDisplay
+Observer <|.. ThirdPartyDisplay
+
+Subject <|.. WeatherData
+Subject --> "observers" Observer
+
+DisplayElement <|.. CurrentConditionsDisplay
+DisplayElement <|.. StatisticsDisplay
+DisplayElement <|.. ForecastDisplay
+DisplayElement <|.. ThirdPartyDisplay
+
+interface Subject {
+    {method} registerObserver()
+    {method} removeObserver()
+    {method} notifyObservers()
+}
+
+class WeatherData {
+    - List<Observer> _observers
+    {method} registerObserver()
+    {method} removeObserver()
+    {method} notifyObservers()
+
+    {method} getTemperature()
+    {method} getHumidity()
+    {method} getPressure()
+    {method} measurementsChanged()
+}
+
+interface Observer {
+    {method} update()
+}
+
+interface DisplayElement {
+    {method} display()
+}
+@enduml

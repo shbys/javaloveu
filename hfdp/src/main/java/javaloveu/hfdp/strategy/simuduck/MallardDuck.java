@@ -1,4 +1,4 @@
-package javaloveu.hfdp.simuduck;
+package javaloveu.hfdp.strategy.simuduck;
 
 /*
  * MallardDuck's quack is a real live duck quack, not a squeak and not a mute quack.
