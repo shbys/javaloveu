@@ -16,8 +16,8 @@ export GRADLE_USER_HOME=your local gradle package folder, default is `youruserfo
 
 # Default Modules after Created
 - app module: the main entry 
-- list module
-- utilities module
+- list module: can be removed
+- utilities module: can be removed
 - buildSrc module
 
 # Open Gradle Project via Idea

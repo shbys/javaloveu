@@ -3,19 +3,10 @@
  */
 package javaloveu.app;
 
-import javaloveu.list.LinkedList;
-
-import static javaloveu.utilities.StringUtils.join;
-import static javaloveu.utilities.StringUtils.split;
-import static javaloveu.app.MessageUtils.getMessage;
-
-import org.apache.commons.text.WordUtils;
+import static javaloveu.hfdp.DesignPattern.runHDFP;
 
 public class App {
     public static void main(String[] args) {
-        LinkedList tokens;
-        tokens = split(getMessage());
-        String result = join(tokens);
-        System.out.println(WordUtils.capitalize(result));
+        runHDFP();
     }
 }

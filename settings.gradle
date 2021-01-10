@@ -8,4 +8,5 @@
  */
 
 rootProject.name = 'javaloveu'
-include('app', 'list', 'utilities')
+include('app', 'hfdp')
+
