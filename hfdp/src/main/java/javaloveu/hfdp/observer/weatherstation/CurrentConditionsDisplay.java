@@ -16,9 +16,9 @@ public class CurrentConditionsDisplay implements Observer, DisplayElement {
     }
 
 
-    public void update(float temperature, float humidity, float pressure) {
-        _temperature = temperature;
-        _humidity = humidity;
+    public void update() {
+        _temperature = _weatherData.getTemperature();
+        _humidity = _weatherData.getHumidity();
         display();
     }
 }

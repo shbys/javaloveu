@@ -9,8 +9,8 @@ public class HeatIndexDisplay implements Observer, DisplayElement {
         _weatherData.registerObserver(this);
     }
 
-    public void update(float t, float rh, float pressure) {
-        _heatIndex = computeHeatIndex(t, rh);
+    public void update() {
+        _heatIndex = computeHeatIndex(_weatherData.getTemperature(), _weatherData.getHumidity());
         display();
     }
 
